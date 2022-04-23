@@ -1,37 +1,171 @@
-!<!DOCTYPE html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Sofia"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74c8d9d92e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Diagon Alley - Landing Page</title>
+</head>
 <body>
-  <!-- header -->
-  <header id="header" >
-    <a href="#top">
-    <img src="" alt="logo name" id="header-img">
-      </a>
-    <!-- nav bar -->
-    <nav id="nav-bar">
-      <a href="#start" class="nav-link">top</a>
-      <a href="#middle" class="nav-link">body</a>
-      <a href="#end" class="nav-link">bottom</a>
-    </nav>
+    <header id="header">
+        <a href="#top">
+            <img src="img\mtg-logo.jpg" alt="MTG Logo" id="header-img">
+        </a>
+        <nav class="nav-bar" id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
     </header>
-  <!-- section start -->
-  <section class="section" id="start">
-    <div class="start-line">
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" name="email" id="email" placeholder="Enter your email here" required>
-        <input class="btn btn-full" type="submit" id="submit" value="Get started">
-        </form>
-      </div>
-    </section>
-  <!-- section middle -->
-  <section class="section" id="middle">
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KdZ4HF1SrFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </iframeу>
-    </section>
-  <!-- section end -->
-  <section class="section" id="end">
-    <div id="media query">
-      <button class="btn btn-full">Sign up now</button>
-      </div>
-    </section>
+    <div class="container">
+        <section class="section" id="hero">
+            <div class="row">
+                <h2 class="welcome">Spells, big mans, planswalkers and more...</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+                    <input class="btn btn-full" type="submit" id="submit" value="Get started">
+                </form>
+            </div>
+        </section>
+        <section class="section" id="features">
+            <div class="row">
+                <h2>Features</h2>
+                <p class="features-para">
+                    Buy spells, big mans, planswalkers and play whis other buyer.
+                </p>
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
 
+                    <div class="desc">
+                        <p>
+                            Cards
+                        </p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <div class="desc">
+                      <p>
+                            Big Brother
+                        </p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fa-solid fa-crosshairs"></i>
+                    </div>
+
+                    <div class="desc">
+                        <p>
+                            Target
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section" id="how-it-works">
+
+            <h2>How it works</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/watch?v=Uo3cL4nrGOk&ab_channel=Programmersarealsohuman" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </section>
+
+        <section class="section" id="pricing">
+            <div class="pricing row">
+
+
+                <h2>Pricing</h2>
+                <div class="cards">
+
+                    <!-- Gold -->
+                    <div class="card">
+                        <div class="top">
+                            <h4 class="plan-type">Hat just right</h4>
+                            <p class="plan-price"><span>$3</span> per month</p>
+                        </div>
+
+                        <div class="middle">
+                            <ul>
+                                <li><i class="fas fa-check"></i>One card</li>
+                                <li><i class="fas fa-check"></i>Two cards</li>
+                                <li><i class="fas fa-check"></i>Tree cards</li>
+                                <li><i class="fas fa-check"></i>Some one else</li>
+                            </ul>
+                        </div>
+
+                        <div class="bottom">
+                            <button class="btn btn-full">Sign up now</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="top">
+                            <h4 class="plan-type">Not full HAT</h4>
+                            <p class="plan-price"><span>$2</span> per month</p>
+                        </div>
+
+                        <div class="middle">
+                            <ul>
+                                <li><i class="fas fa-check"></i>One Card</li>
+                                <li><i class="fas fa-check"></i>Two Cards</li>
+                                <li><i class="fas fa-check"></i>Three Cards</li>
+                                <li><i class="fas fa-times"></i>Some one else</li>
+                            </ul>
+                        </div>
+
+                        <div class="bottom">
+                            <button class="btn btn-ghost">Sign up now</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="top">
+                            <h4 class="plan-type">Full HAT</h4>
+                            <p class="plan-price"><span>$1</span> per month</p>
+                        </div>
+
+                        <div class="middle">
+                            <ul>
+                                <li><i class="fas fa-check"></i>One Card</li>
+                                <li><i class="fas fa-times"></i>Two Cards</li>
+                                <li><i class="fas fa-times"></i>Three Cards</li>
+                                <li><i class="fas fa-times"></i>Some one else</li>
+                            </ul>
+                        </div>
+
+                        <div class="bottom">
+                            <button class="btn btn-ghost">Sign up now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="row">
+                <a class="nav-link" href="#hero">What</a>
+                <a class="nav-link" href="#hero">is</a>
+                <a class="nav-link" href="#hero">it?</a>
+            </div>
+
+            <div class="row">
+                <p class="copyright">Copyright 2022, MTG </p>
+            </div>
+        </footer>
+
+    </div>
 </body>
+
+</html>
